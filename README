@@ -1,0 +1,19 @@
+1. First copy the files "alarm_cond.c", and "errors.h" into your
+   own directory.
+
+2. To compile the program "alarm_cond.c", use the following command:
+
+      cc new_alarm_cond.c -D_POSIX_PTHREAD_SEMANTICS -lpthread
+
+3. Type "a.out" to run the executable code.
+
+4. At the prompt "ALARM>", type in the number of seconds at which
+   the alarm should expire, followed by the text of the message.
+   For example:
+	
+   To enter a alarm.
+   ALARM> <Time> Message(<Number>) <message> => 2 Message(2) This is the message
+
+   To enter a cancel alarm.
+   ALARM> Cancel: Message(<Number>) => Cancel: Message(2)
+  (To exit from the program, type Ctrl-d.)
